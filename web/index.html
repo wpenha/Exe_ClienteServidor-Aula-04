@@ -1,0 +1,220 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loja de Veiculos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body background="img/back2.jpg">
+         <!-- Formulário method POST -->
+        <div id="formularioPost">
+            <form action="Comprar" method="post">
+            <table>
+                <tr>
+                    <td>Nome:</td>
+                    <td>
+                    <input type="text" required="required" name="nome" id="nome" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                <tr>
+                    <td>CPF:</td>
+                    <td>
+                    <input type="text" required="required" name="cpf" id="cpf" pattern="[0-9]+$" />
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                <tr>
+                    <td>Endereço:</td>
+                    <td><input type="text" name="endereco" id="endereco" required="" /></td>
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                <tr>
+                    <td>Telefone</td>
+                    <td>
+                    <input required="" name="tel" id="tel" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}"> &nbsp; &nbsp;(xx) xxxx-xxxx    
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>   
+                <tr>
+                    <td>Modelo:</td>
+                    <td>
+                        <input type="radio" name="modRadio"  value="EX" required=""/>EX
+                        <input type="radio" name="modRadio"  value="ELX" required=""/>ELX
+                        <input type="radio" name="modRadio"  value="Master" required=""/>Master                                             
+                    </td>                    
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>                
+                <tr>
+                    <td>Quantidade de Portas</td>
+                    <td>
+                        <input type="radio" name="qtdPorta"  value="2P" required=""/>2 Portas
+                        <input type="radio" name="qtdPorta"  value="4P" required=""/>4 Portas                                                                    
+                    </td>  
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>                
+                <tr>
+                    <td>Acessórios</td>
+                    <td>
+                       <input type="checkbox" name="acesAC" value="arcondicionado" >Ar Condicionado
+                       <input type="checkbox" name="direcao" value="direcao" >Direção
+                       <input type="checkbox" name="VE_TE" value="VE_TE" >VE/TE 
+                    </td>  
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                <tr>
+                    <td>    
+                        <button type="submit" id='btnCalcular'>Calcular</button>
+                        
+                    </td>
+                </tr>
+                
+            </table> 
+            </form>
+            <br />
+            <h1>Formulário ultizilando metodo POST</h1>
+        </div>
+        <!-- Formulário method get -->
+          <div id="formularioGet">
+            <form action="Comprar" method="get">
+            <table>
+                <tr>
+                    <td>Nome:</td>
+                    <td>
+                    <input type="text" required="required" name="nome" id="nome" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                <tr>
+                    <td>CPF:</td>
+                    <td>
+                    <input type="text" required="required" name="cpf" id="cpf" pattern="[0-9]+$" />
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                <tr>
+                    <td>Endereço:</td>
+                    <td><input type="text" name="endereco" id="endereco" required="" /></td>
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                <tr>
+                    <td>Telefone</td>
+                    <td>
+                    <input required="" name="tel" id="tel" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}"> &nbsp; &nbsp;(xx) xxxx-xxxx    
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>   
+                <tr>
+                    <td>Modelo:</td>
+                    <td>
+                        <input type="radio" name="modRadio"  value="EX" required=""/>EX
+                        <input type="radio" name="modRadio"  value="ELX" required=""/>ELX
+                        <input type="radio" name="modRadio"  value="Master" required=""/>Master                                             
+                    </td>                    
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>                
+                <tr>
+                    <td>Quantidade de Portas</td>
+                    <td>
+                        <input type="radio" name="qtdPorta"  value="2P" required=""/>2 Portas
+                        <input type="radio" name="qtdPorta"  value="4P" required=""/>4 Portas                                                                    
+                    </td>  
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>                
+                <tr>
+                    <td>Acessórios</td>
+                    <td>
+                       <input type="checkbox" name="vehicle" value="arcondicionado" >Ar Condicionado
+                       <input type="checkbox" name="vehicle" value="direcao" >Direção
+                       <input type="checkbox" name="vehicle" value="VE/TE" >VE/TE 
+                    </td>  
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>                   
+                </tr>
+                <tr>
+                    <td>    
+                        <button type="submit" id='btnCalcular'>Calcular</button>
+                        
+                    </td>
+                </tr>
+                
+            </table> 
+            </form>
+            <br />
+            <h1>Formulário ultizilando metodo GET</h1>
+        </div>
+        <div id="dviBrancaPost"></div>
+        <div id="dviBrancaGet"></div>
+    </body>
+</html>

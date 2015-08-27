@@ -1,0 +1,143 @@
+*{	
+}
+
+#formularioPost{
+	position: absolute;
+	top:20%;
+	left: 10%;
+	width: 530px;
+	height: 400px;	
+	font-size: 20px;
+	z-index: 999;
+}
+
+#formularioGet{
+	position: absolute;
+	top:20%;
+	left: 55%;
+	width: 530px;
+	height: 400px;	
+	font-size: 20px;
+	z-index: 999;
+}
+
+#dviBrancaPost{
+	position: fixed;
+	top:16%;
+	left: 9%;
+	width: 550px;
+	height: 430px;
+	background-color: #FFF;
+	filter:alpha(opacity=30);
+	opacity: 0.3;
+	-moz-opacity:0.3;
+	-webkit-opacity:0.3;
+}
+
+#dviBrancaGet{
+	position: fixed;
+	top:16%;
+	left: 53%;
+	width: 550px;
+	height: 430px;
+	background-color: #FFF;
+	filter:alpha(opacity=30);
+	opacity: 0.3;
+	-moz-opacity:0.3;
+	-webkit-opacity:0.3;
+}
+
+#dviBrancaNegada{
+	position: fixed;
+	top:16%;
+	left: 28%;
+	width: 550px;
+	height: 430px;
+	background-color: #FFF;
+	filter:alpha(opacity=30);
+	opacity: 0.3;
+	-moz-opacity:0.3;
+	-webkit-opacity:0.3;
+}
+
+#nome, #cpf, #endereco{
+	width: 300px;
+	height: 20px;	
+}
+
+#tel{
+	width: 150px;
+	height: 20px;
+}
+
+input[type=button],button {
+	border:1px solid #cdcdc6;
+	background-color:#1E1E1E;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:10px;
+	display:inline-block;
+	font-family: sans-serif, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color:#FFF;
+	font-weight:normal;
+	padding:6px 20px;
+	text-decoration:none;
+	position: relative;		
+	left: 100%;
+	top: 10%;
+	}
+
+input[type=button],button:hover {
+color: #6E8B3D;
+ background-color:#363636;
+ cursor:pointer;
+}
+
+#acessDenied{
+	position: fixed;
+	top:20%;
+	left: 30%;
+	width: 500px;
+	height: 400px;	
+	font-size: 20px;
+	z-index: 999;
+}
+
+#acessDenied img{
+	width: 300px;
+	margin-left: 15%;
+}
+
+#acessDenied h1, #formularioGet h1, #formularioPost h1{
+	font-size: 26px;
+	color: red;
+	text-align: justify;
+}
+
+#acessDenied h1:hover{	
+	color: #8B0000;
+	cursor: wait;	
+}
+
+#formularioGet h1:hover{
+	color: #8B0000;
+	cursor: wait;	
+}
+#formularioPost h1:hover{
+	color: #8B0000;
+	cursor: wait;	
+}
+a{
+	font-family: sans-serif, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color:#FFF;
+	font-weight:normal;
+	padding:6px 20px;
+	text-decoration:none;
+}
+
+a:hover{
+	color: #6E8B3D;
+	cursor:pointer;
+}
